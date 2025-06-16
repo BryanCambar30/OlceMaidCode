@@ -4,227 +4,74 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FAQ - Olcemaid</title>
-  <style>
-    .faq {
-      font-family: Arial, sans-serif;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    
-    .faq__item {
-      margin-bottom: 30px;
-      border-bottom: 1px solid #eee;
-      padding-bottom: 20px;
-    }
-    
-    .faq__question {
-      font-weight: bold;
-      font-size: 18px;
-      cursor: pointer;
-      position: relative;
-      padding-right: 30px;
-      margin-bottom: 15px;
-    }
-    
-    .faq__question::after {
-      content: "▼";
-      position: absolute;
-      right: 10px;
-      transition: transform 0.3s ease;
-    }
-    
-    .faq__item[open] .faq__question::after {
-      content: "▲";
-    }
-    
-    .faq__answer {
-      padding: 10px;
-      line-height: 1.5;
-      color: #555;
-    }
-  </style>
 </head>
 <body>
-    <main style="--h1-font-size:60px;--h1-font-style:normal;--h1-font-family:var(--font-primary);--h1-font-weight:700;--h1-line-height:1.2;--h1-m-font-size:38px;--h1-letter-spacing:0em;--h1-text-transform:none;--h1-text-decoration:none;--h2-font-size:48px;--h2-font-style:normal;--h2-font-family:var(--font-primary);--h2-font-weight:700;--h2-line-height:1.2;--h2-m-font-size:34px;--h2-letter-spacing:0em;--h2-text-transform:none;--h2-text-decoration:none;--h3-font-size:36px;--h3-font-style:normal;--h3-font-family:var(--font-primary);--h3-font-weight:700;--h3-line-height:1.2;--h3-m-font-size:32px;--h3-letter-spacing:0em;--h3-text-transform:none;--h3-text-decoration:none;--h4-font-size:32px;--h4-font-style:normal;--h4-font-family:var(--font-primary);--h4-font-weight:700;--h4-line-height:1.2;--h4-m-font-size:24px;--h4-letter-spacing:0;--h4-text-transform:none;--h4-text-decoration:none;--h5-font-size:24px;--h5-font-style:normal;--h5-font-family:var(--font-primary);--h5-font-weight:700;--h5-line-height:1.2;--h5-m-font-size:24px;--h5-letter-spacing:0;--h5-text-transform:none;--h5-text-decoration:none;--h6-font-size:18px;--h6-font-style:normal;--h6-font-family:var(--font-primary);--h6-font-weight:600;--h6-line-height:1.2;--h6-m-font-size:18px;--h6-letter-spacing:0;--h6-text-transform:none;--h6-text-decoration:none;--body-font-size:16px;--body-font-style:normal;--body-font-family:var(--font-secondary);--body-font-weight:400;--body-line-height:1.5em;--body-m-font-size:16px;--body-letter-spacing:0;--body-text-transform:none;--body-text-decoration:none;--font-primary:&#39;Inter&#39;, sans-serif;--font-secondary:&#39;Inter&#39;, sans-serif;--nav-link-color:rgb(110, 104, 104);--nav-link-font-size:16px;--nav-link-font-style:normal;--nav-link-color-hover:rgb(13, 20, 26);--nav-link-font-family:var(--font-secondary);--nav-link-font-weight:800;--nav-link-line-height:1.5em;--nav-link-m-font-size:24px;--nav-link-letter-spacing:0;--nav-link-text-transform:none;--nav-link-text-decoration:none;--body-large-font-size:18px;--body-large-font-style:normal;--body-large-font-family:var(--font-secondary);--body-large-font-weight:400;--body-large-line-height:1.5em;--body-large-m-font-size:18px;--body-large-letter-spacing:0;--body-large-text-transform:none;--body-large-text-decoration:none;--body-small-font-size:14px;--body-small-font-style:normal;--body-small-font-family:var(--font-secondary);--body-small-font-weight:400;--body-small-line-height:1.5em;--body-small-m-font-size:14px;--body-small-letter-spacing:0;--body-small-text-transform:none;--body-small-text-decoration:none;--grid-button-primary-font-size:16px;--grid-button-primary-padding-x:40px;--grid-button-primary-padding-y:16px;--grid-button-primary-font-color:rgb(255, 255, 255);--grid-button-primary-font-style:normal;--grid-button-primary-border-null:;--grid-button-primary-font-family:var(--font-secondary);--grid-button-primary-font-weight:400;--grid-button-primary-line-height:normal;--grid-button-primary-m-font-size:16px;--grid-button-primary-m-padding-x:36px;--grid-button-primary-m-padding-y:14px;--grid-button-primary-box-shadow-x:0px;--grid-button-primary-box-shadow-y:0px;--grid-button-primary-border-radius:999px;--grid-button-primary-letter-spacing:normal;--grid-button-primary-text-transform:none;--grid-button-primary-box-shadow-blur:0px;--grid-button-primary-box-shadow-null:;--grid-button-primary-text-decoration:none;--grid-button-primary-background-color:rgb(0, 0, 0);--grid-button-primary-box-shadow-color:rgba(0, 0, 0, 0);--grid-button-primary-border-null-hover:;--grid-button-primary-box-shadow-spread:0px;--grid-button-primary-box-shadow-x-hover:0px;--grid-button-primary-box-shadow-y-hover:0px;--grid-button-primary-transition-duration:0.2s;--grid-button-primary-background-color-null:;--grid-button-primary-box-shadow-blur-hover:0px;--grid-button-primary-box-shadow-null-hover:;--grid-button-primary-background-color-hover:rgb(29, 30, 32);--grid-button-primary-box-shadow-color-hover:0px;--grid-button-primary-box-shadow-spread-hover:0px;--grid-button-primary-transition-timing-function:ease;--grid-button-primary-background-color-null-hover:;--grid-button-secondary-font-size:16px;--grid-button-secondary-padding-x:40px;--grid-button-secondary-padding-y:16px;--grid-button-secondary-font-color:rgb(0, 0, 0);--grid-button-secondary-font-style:normal;--grid-button-secondary-border-null:;--grid-button-secondary-font-family:var(--font-secondary);--grid-button-secondary-font-weight:400;--grid-button-secondary-line-height:normal;--grid-button-secondary-m-font-size:16px;--grid-button-secondary-m-padding-x:36px;--grid-button-secondary-m-padding-y:14px;--grid-button-secondary-box-shadow-x:0px;--grid-button-secondary-box-shadow-y:0px;--grid-button-secondary-border-radius:999px;--grid-button-secondary-letter-spacing:normal;--grid-button-secondary-text-transform:none;--grid-button-secondary-box-shadow-blur:0px;--grid-button-secondary-box-shadow-null:;--grid-button-secondary-text-decoration:none;--grid-button-secondary-background-color:white;--grid-button-secondary-box-shadow-color:rgba(0, 0, 0, 0);--grid-button-secondary-border-null-hover:;--grid-button-secondary-box-shadow-spread:0px;--grid-button-secondary-box-shadow-x-hover:0px;--grid-button-secondary-box-shadow-y-hover:0px;--grid-button-secondary-transition-duration:0.2s;--grid-button-secondary-background-color-null:;--grid-button-secondary-box-shadow-blur-hover:0px;--grid-button-secondary-box-shadow-null-hover:;--grid-button-secondary-background-color-hover:rgb(240, 240, 240);--grid-button-secondary-box-shadow-color-hover:0px;--grid-button-secondary-box-shadow-spread-hover:0px;--grid-button-secondary-transition-timing-function:ease;--grid-button-secondary-background-color-null-hover:;--20f9e822:65px;" class="page">
-		<div class="sticky-trigger">
-		</div>
-		<!---->
-		<div class="top-blocks--sticky top-blocks">
-		    <!---->
-			<header class="block-header" style="--nav-link-text-color:rgb(110, 104, 104);--nav-link-text-color-hover:rgb(13, 20, 26);--header-height-mobile:65px;--width:1240px;--padding-top:32px;--padding:32px 16px 32px 16px;--padding-right:16px;--padding-bottom:32px;--padding-left:16px;--m-padding-top:15px;--m-padding:15px 16px 15px 16px;--m-padding-right:16px;--m-padding-bottom:15px;--m-padding-left:16px;--logo-width:248px;--cartIconSize:24px;--link-spacing:40px;--m-logo-width:95.7060546875px;--m-link-spacing:20px;--element-spacing:64px;--m-element-spacing:15px;--contrastBackgroundColor:rgb(224, 224, 224);--background-color:#ffffff;" backgroundcolorcontrast="rgb(224, 224, 224)" height="155" is-in-preview-mode="false" is-preview-mobile-view="false" data-v-b847aeba>
-				<div class="background" style="--background-color:#ffffff;" data-v-b847aeba>
-				</div>
-				<!--[-->
-				<div class="block-header-layout-desktop block-header-layout-desktop--desktop-1" style="--3c28effe:min-content auto repeat(1, min-content);--b96ef066:0px;" data-v-3b3f462d>
-				<!--[-->
-					<a class="block-header-logo block-header__logo" href="/" data-v-b847aeba style="--aa8eed20:248px;--daecaa86:91px;--cb66da22:95.7060546875px;--d5125dc4:35px;" data-v-525b292a>
-						<img class="block-header-logo__image" src="public/img/Olce_Maid_logo_horizontal[1].png" alt="OlceMaid logo" data-v-525b292a>
-					</a>
-					<!--]--><!--[-->
-					<nav class="block-header__nav" data-v-b847aeba>
-						<ul class="block-header__nav-links" data-v-b847aeba>
-							<!--[-->
-							<li class="block-header-item" data-v-b847aeba data-v-e35d3004>
-								<label class="block-header-item__label" data-v-e35d3004>
-									<!---->
-									<div class="item-content-wrapper block-header-item__item" aria-haspopup="false" data-v-e35d3004 data-v-04741be4>
-										<a class="item-content" target="_self" rel href="/#what-makes-us-different" data-v-04741be4>
-										What makes us different?
-										</a>
-									<!---->
-									</div>
-								<!---->
-								</label>
-							</li>
-							<li class="block-header-item" data-v-b847aeba data-v-e35d3004>
-								<label class="block-header-item__label" data-v-e35d3004>
-									<!---->
-									<div class="item-content-wrapper block-header-item__item" aria-haspopup="false" data-v-e35d3004 data-v-04741be4>
-										<a class="item-content" href="/about-us.html" data-v-04741be4>
-											About us
-										</a>
-									<!---->
-									</div>
-								<!---->
-								</label>
-							</li>
-							<li class="block-header-item" data-v-b847aeba data-v-e35d3004>
-								<label class="block-header-item__label" data-v-e35d3004>
-									<!---->
-									<div class="item-content-wrapper block-header-item__item" aria-haspopup="false" data-v-e35d3004 data-v-04741be4>
-										<a class="item-content" target="_self" rel href="/about-us.html#our-services" data-v-04741be4>
-											Our cleaning services
-										</a>
-									<!---->
-									</div>
-								<!---->
-								</label>
-							</li>
-							<li class="block-header-item" data-v-b847aeba data-v-e35d3004>
-								<label class="block-header-item__label" data-v-e35d3004>
-									<!---->
-									<div class="item-content-wrapper item-content-wrapper--active block-header-item__item" aria-haspopup="false" data-v-e35d3004 data-v-04741be4>
-										<a class="item-content" href="/faq.html" data-v-04741be4>
-											FAQ
-										</a>
-									<!---->
-									</div>
-								<!---->
-								</label>
-							</li>
-							<!--]-->
-						</ul>
-					</nav>
-					<!--]--><!--[--><!--]--><!--[--><!--]--><!--[--><!--]--><!--[-->
-					<a href="/contact-us.html" target="_self" rel class="grid-button grid-button--primary block-header__button" aria-hidden="false" style="--font-size-mobile:12px;--border-radius:50px;--border-width:0px;--background-color:rgb(67, 166, 219);--font-color:rgb(255, 255, 255);--border-color:rgb(0, 0, 0);--background-color-hover:rgb(229, 229, 229);--font-color-hover:rgb(13, 20, 26);--border-color-hover:rgb(0, 0, 0);--m-height:83.33333333333333vw;--m-width:83.33333333333333vw;" data-element-ref="zzGhi0" data-v-b847aeba data-v-4a176f12>
-						BOOK NOW
-					</a>
-					<!--]-->
-				</div>
-				<div class="block-header-layout-mobile block-header-layout-mobile--mobile-1" style="--3c28effe:min-content auto repeat(1, min-content);--b96ef066:0px;" data-v-3b3f462d>
-				<!--[-->
-					<a class="block-header-logo block-header__logo" href="/" data-v-b847aeba style="--aa8eed20:248px;--daecaa86:91px;--cb66da22:95.7060546875px;--d5125dc4:35px;" data-v-525b292a>
-						<img class="block-header-logo__image" src="public/img/Olce_Maid_logo_horizontal[1].png" alt="OlceMaid logo" data-v-525b292a>
-					</a>
-					<!--]--><!--[--><!--]--><!--[-->
-					<button type="button" class="burger block-header__hamburger-menu" title="Menu" data-v-b847aeba style="--165ebbac:var(--nav-link-text-color);" data-v-ccf9b649>
-						<span class="burger__bun" data-v-ccf9b649>
-						</span>
-						<span class="burger__meat" data-v-ccf9b649>					
-						</span>
-						<span class="burger__bun" data-v-ccf9b649>							
-						</span>
-					</button>
-					<!--]-->
-					<div class="block-header-layout-mobile__dropdown--link-align-left block-header-layout-mobile__dropdown" data-v-3b3f462d>
-						<!--[-->
-						<nav class="block-header__nav" data-v-b847aeba>
-							<ul class="block-header__nav-links" data-v-b847aeba>
-								<!--[-->
-								<li class="block-header-item" data-v-b847aeba data-v-e35d3004>
-									<label class="block-header-item__label" data-v-e35d3004>
-										<!---->
-										<div class="item-content-wrapper block-header-item__item" aria-haspopup="false" data-v-e35d3004 data-v-04741be4>
-											<a class="item-content" target="_self" rel href="/#what-makes-us-different" data-v-04741be4>
-												What makes us different?
-											</a>
-										<!---->
-										</div>
-									<!---->
-									</label>
-								</li>
-								<li class="block-header-item" data-v-b847aeba data-v-e35d3004>
-									<label class="block-header-item__label" data-v-e35d3004>
-										<!---->
-										<div class="item-content-wrapper block-header-item__item" aria-haspopup="false" data-v-e35d3004 data-v-04741be4>
-											<a class="item-content" href="/about-us.html" data-v-04741be4>
-												About us
-											</a>
-										<!---->
-										</div>
-									<!---->
-									</label>
-								</li>
-								<li class="block-header-item" data-v-b847aeba data-v-e35d3004>
-									<label class="block-header-item__label" data-v-e35d3004>
-										<!---->
-										<div class="item-content-wrapper block-header-item__item" aria-haspopup="false" data-v-e35d3004 data-v-04741be4>
-											<a class="item-content" target="_self" rel href="/about-us.html#our-services" data-v-04741be4>
-												Our cleaning services
-											</a>
-										<!---->
-										</div>
-									<!---->
-									</label>
-								</li>
-								<li class="block-header-item" data-v-b847aeba data-v-e35d3004>
-									<label class="block-header-item__label" data-v-e35d3004>
-										<!---->
-										<div class="item-content-wrapper item-content-wrapper--active block-header-item__item" aria-haspopup="false" data-v-e35d3004 data-v-04741be4>
-											<a class="item-content" href="/faq.html" data-v-04741be4>
-												FAQ
-											</a>
-										<!---->
-										</div>
-									<!---->
-									</label>
-								</li>
-								<!--]-->
-							</ul>
-						</nav>
-						<!--]--><!--[--><!--]--><!--[--><!--]--><!--[-->
-						<a href="/contact-us.html" target="_self" rel class="grid-button grid-button--primary block-header__button" aria-hidden="false" style="--font-size-mobile:12px;--border-radius:50px;--border-width:0px;--background-color:rgb(67, 166, 219);--font-color:rgb(255, 255, 255);--border-color:rgb(0, 0, 0);--background-color-hover:rgb(229, 229, 229);--font-color-hover:rgb(13, 20, 26);--border-color-hover:rgb(0, 0, 0);--m-height:83.33333333333333vw;--m-width:83.33333333333333vw;" data-element-ref="zzGhi0" data-v-b847aeba data-v-4a176f12>
-							BOOK NOW
-						</a>
-						<!--]-->
-					</div>
-				</div>
-				<!--]-->
-			</header>
-		</div>
+    <main class="page">
+		<div class="header-container">
+            <header class="main-header">
+              <!-- Logo -->
+              <div class="header-logo">
+                <a href="/">
+                  <img src="public/img/Olce_Maid_logo_horizontal[1].png" alt="OlceMaid logo" class="logo-image">
+                </a>
+              </div>
+          
+              <!-- Menú Desktop (visible en pantallas grandes) -->
+              <nav class="desktop-nav">
+                <ul class="nav-list">
+                  <li class="nav-item">
+                    <a href="/#what-makes-us-different" class="nav-link">What makes us different?</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/about-us.html" class="nav-link">About us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/about-us.html#our-services" class="nav-link">Our cleaning services</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a href="/faq.html" class="nav-link">FAQ</a>
+                  </li>
+                </ul>
+                <a href="/contact-us.html" class="cta-button">BOOK NOW</a>
+              </nav>
+          
+              <!-- Menú Hamburguesa (solo móvil) -->
+              <button class="hamburger-btn" aria-label="Menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+              </button>
+          
+              <!-- Menú Móvil (aparece al hacer clic en hamburguesa) -->
+              <div class="mobile-menu">
+                <nav class="mobile-nav">
+                  <ul class="mobile-nav-list">
+                    <li class="mobile-nav-item">
+                      <a href="/#what-makes-us-different" class="mobile-nav-link">What makes us different?</a>
+                    </li>
+                    <li class="mobile-nav-item">
+                      <a href="/about-us.html" class="mobile-nav-link">About us</a>
+                    </li>
+                    <li class="mobile-nav-item">
+                      <a href="/about-us.html#our-services" class="mobile-nav-link">Our cleaning services</a>
+                    </li>
+                    <li class="mobile-nav-item active">
+                      <a href="/faq.html" class="mobile-nav-link">FAQ</a>
+                    </li>
+                  </ul>
+                  <a href="/contact-us.html" class="mobile-cta-button">BOOK NOW</a>
+                </nav>
+              </div>
+            </header>
+        </div>
         <div class="blocks">
             <!--[-->
-            <section id="zbYlvq" class="block block--desktop-first-visible block--mobile-first-visible" style="--block-padding-top:16px;--block-padding:16px 0 16px 0;--block-padding-right:0;--block-padding-bottom:16px;--block-padding-left:0;--m-block-padding:16px;" data-v-8057b9ec>
-                <div class="block-background" data-v-8057b9ec style="--0dfb3fc4:transparent;--c548f400:50%;--c1df42c2:0%;--00b219f9:50%;--3cd0c34c:0.25;">
-                    <img src="public/img/Imagen de WhatsApp 2024-05-15 a las 16.38.07_f05b012d.jpg" srcset="public/img/Imagen de WhatsApp 2024-05-15 a las 16.38.07_f05b012d.jpg 360w,public/img/Imagen de WhatsApp 2024-05-15 a las 16.38.07_f05b012d.jpg 720w,public/img/Imagen de WhatsApp 2024-05-15 a las 16.38.07_f05b012d.jpg 945w,public/img/Imagen de WhatsApp 2024-05-15 a las 16.38.07_f05b012d.jpg 1080w,public/img/Imagen de WhatsApp 2024-05-15 a las 16.38.07_f05b012d.jpg 1440w,https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=2880,fit=crop/YbNa1qMWQoUanQ1R/faq2-mv0jWXzL5WiMqjpG.pnpublic/img/Imagen de WhatsApp 2024-05-15 a las 16.38.07_f05b012d.jpg 2880w,public/img/Imagen de WhatsApp 2024-05-15 a las 16.38.07_f05b012d.jpg 1920w,public/img/Imagen de WhatsApp 2024-05-15 a las 16.38.07_f05b012d.jpg 3840w" width="100vw" sizes="(max-width: 500px) 800px, 100vw" loading="eager" class="block-background__image" style="">
-                    <div class="block-background__overlay">						
-                    </div>
+            <section id="faq-hero" class="faq-hero-section">
+                <div class="faq-hero-container">
+                  <div class="faq-hero-content">
+                    <h1 class="faq-hero-title">FAQs</h1>
+                  </div>
                 </div>
-                <div class="block-layout block-layout--layout" style="--m-grid-template-rows:3.3333333333333335vw auto 5px;--t-grid-template-rows:minmax(12px, auto) minmax(46px, auto) 1fr;--small-desktop-grid-template-rows:9.640522875816993vw auto 82px;--grid-template-rows:minmax(118px, auto) minmax(72px, auto) 1fr;--m-grid-template-columns:100%;--grid-template-columns:25.245098039215684% 49.50980392156863% 25.245098039215684%;--m-block-min-height:auto;--t-block-min-height:63px;--small-desktop-block-min-height:auto;--block-min-height:272px;--c467b54c:1224px;--2c660f9c:360px;--6ced7b1e:0 4.444444444444445vw;--1f9bbfe2:0 16px;" data-v-8057b9ec>
-                    <!--[--><!--[-->
-                    <div class="layout-element layout-element--layout layout-element transition transition--slide" style="--text:center;--align:flex-start;--justify:flex-start;--m-element-margin:0 0 16px 0;--z-index:1;--grid-row:2/3;--grid-column:2/3;--m-grid-row:2/3;--m-grid-column:1/2;--68a0bbc6:72px;--ebe08afe:46px;" data-v-f5dd3112>
-                        <!--[--><!----><!----><!----><!----><!---->
-                        <div class="text-box layout-element__component layout-element__component--GridTextBox" id="z3-GOw" data-v-f5dd3112 style="--6ce2bb40:break-spaces;--a82e6ffc:break-spaces;">
-                            <h1 dir="auto" style="color: rgb(255, 255, 255)">
-                                FAQs
-                            </h1>
-                        </div>
-                        <!----><!----><!----><!----><!----><!----><!----><!----><!--[--><!--]--><!--]-->
-                    </div>
-                    <!--]--><!--]-->
-                </div>
-            <!----><!----><!----><!----><!----><!---->
             </section>
             <section>
                 <div class="faq">
@@ -254,5 +101,327 @@
                   <!-- Resto de las preguntas con la misma estructura -->
                 </div>
             </section>
+
+            <style>
+                .faq {
+                  font-family: Arial, sans-serif;
+                  max-width: 1200px;
+                  margin: 0 auto;
+                  padding: 20px;
+                }
+                
+                .faq__item {
+                  margin-bottom: 30px;
+                  border-bottom: 1px solid #eee;
+                  padding-bottom: 20px;
+                }
+                
+                .faq__question {
+                  font-weight: bold;
+                  font-size: 18px;
+                  cursor: pointer;
+                  position: relative;
+                  padding-right: 30px;
+                  margin-bottom: 15px;
+                }
+                
+                .faq__question::after {
+                  content: "▼";
+                  position: absolute;
+                  right: 10px;
+                  transition: transform 0.3s ease;
+                }
+                
+                .faq__item[open] .faq__question::after {
+                  content: "▲";
+                }
+                
+                .faq__answer {
+                  padding: 10px;
+                  line-height: 1.5;
+                  color: #555;
+                }
+            
+                .faq-hero-section {
+                position: relative;
+                width: 100%;
+                min-height: 63px; /* Móvil por defecto */
+                padding: 16px 0;
+                overflow: hidden;
+              }
+            
+              .faq-hero-container {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+              }
+            
+              .faq-hero-container::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.25); /* Overlay con 25% de opacidad */
+                z-index: 1;
+              }
+            
+              .faq-hero-container::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: url('public/img/Imagen de WhatsApp 2024-05-15 a las 16.38.07_f05b012d.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                z-index: 0;
+              }
+            
+              .faq-hero-content {
+                position: relative;
+                z-index: 2;
+                max-width: 1224px;
+                margin: 0 auto;
+                padding: 0 16px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+              }
+            
+              .faq-hero-title {
+                color: white;
+                text-align: center;
+                margin: 0;
+              }
+            
+              /* Responsive para tablets */
+              @media (min-width: 768px) {
+                .faq-hero-section {
+                  min-height: 150px;
+                }
+                
+              }
+            
+              /* Responsive para escritorio */
+              @media (min-width: 1024px) {
+                .faq-hero-section {
+                  min-height: 272px;
+                }
+                
+                .faq-hero-content {
+                  padding: 0;
+                }
+            
+                /* Estilos base */
+              .header-container {
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+                background-color: #ffffff;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+              }
+            
+              .main-header {
+                max-width: 1240px;
+                margin: 0 auto;
+                padding: 15px 16px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              }
+            
+              .header-logo {
+                flex-shrink: 0;
+              }
+            
+              .logo-image {
+                height: 35px;
+                width: auto;
+              }
+            
+              /* Estilos para el menú desktop */
+              .desktop-nav {
+                display: flex;
+                align-items: center;
+                gap: 40px;
+              }
+            
+              .nav-list {
+                display: flex;
+                gap: 20px;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+              }
+            
+              .nav-link {
+                color: rgb(110, 104, 104);
+                text-decoration: none;
+                font-weight: 800;
+                font-size: 16px;
+                transition: color 0.3s ease;
+              }
+            
+              .nav-link:hover,
+              .nav-item.active .nav-link {
+                color: rgb(13, 20, 26);
+              }
+            
+              .cta-button {
+                background-color: rgb(67, 166, 219);
+                color: white;
+                padding: 10px 25px;
+                border-radius: 50px;
+                text-decoration: none;
+                font-weight: 400;
+                transition: all 0.3s ease;
+                border: none;
+                cursor: pointer;
+              }
+            
+              .cta-button:hover {
+                background-color: rgb(229, 229, 229);
+                color: rgb(13, 20, 26);
+              }
+            
+              /* Estilos para el menú hamburguesa */
+              .hamburger-btn {
+                display: none;
+                background: none;
+                border: none;
+                cursor: pointer;
+                padding: 10px;
+                z-index: 1001;
+              }
+            
+              .hamburger-line {
+                display: block;
+                width: 25px;
+                height: 2px;
+                background-color: rgb(110, 104, 104);
+                margin: 5px 0;
+                transition: all 0.3s ease;
+              }
+            
+              /* Estilos para el menú móvil */
+              .mobile-menu {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                background-color: #ffffff;
+                z-index: 1000;
+                transform: translateX(100%);
+                transition: transform 0.3s ease;
+                padding-top: 80px;
+                overflow-y: auto;
+              }
+            
+              .mobile-menu.active {
+                transform: translateX(0);
+              }
+            
+              .mobile-nav-list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+              }
+            
+              .mobile-nav-item {
+                padding: 15px 20px;
+                border-bottom: 1px solid #eee;
+              }
+            
+              .mobile-nav-link {
+                color: rgb(110, 104, 104);
+                text-decoration: none;
+                font-size: 18px;
+                display: block;
+              }
+            
+              .mobile-nav-item.active .mobile-nav-link {
+                color: rgb(13, 20, 26);
+                font-weight: bold;
+              }
+            
+              .mobile-cta-button {
+                display: block;
+                margin: 20px;
+                background-color: rgb(67, 166, 219);
+                color: white;
+                padding: 15px;
+                border-radius: 50px;
+                text-align: center;
+                text-decoration: none;
+                font-weight: 400;
+              }
+            
+              /* Estilos responsive */
+              @media (max-width: 1024px) {
+                .desktop-nav {
+                  display: none;
+                }
+            
+                .hamburger-btn {
+                  display: block;
+                }
+            
+                .hamburger-btn.active .hamburger-line:nth-child(1) {
+                  transform: translateY(7px) rotate(45deg);
+                }
+            
+                .hamburger-btn.active .hamburger-line:nth-child(2) {
+                  opacity: 0;
+                }
+            
+                .hamburger-btn.active .hamburger-line:nth-child(3) {
+                  transform: translateY(-7px) rotate(-45deg);
+                }
+              }
+            
+              @media (min-width: 768px) {
+                .main-header {
+                  padding: 32px 16px;
+                }
+            
+                .logo-image {
+                  height: 91px;
+                }
+              }
+            }
+            </style>
+            
+            <script>
+              document.addEventListener('DOMContentLoaded', function() {
+                const hamburgerBtn = document.querySelector('.hamburger-btn');
+                const mobileMenu = document.querySelector('.mobile-menu');
+                
+                hamburgerBtn.addEventListener('click', function() {
+                  this.classList.toggle('active');
+                  mobileMenu.classList.toggle('active');
+                  this.setAttribute('aria-expanded', this.classList.contains('active'));
+                });
+                
+                // Cerrar menú al hacer clic en un enlace
+                const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+                mobileLinks.forEach(link => {
+                  link.addEventListener('click', function() {
+                    hamburgerBtn.classList.remove('active');
+                    mobileMenu.classList.remove('active');
+                    hamburgerBtn.setAttribute('aria-expanded', 'false');
+                  });
+                });
+              });
+            </script>
 </body>
 </html>
