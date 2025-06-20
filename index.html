@@ -571,6 +571,7 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                font-family: 'Inter', sans-serif;
             }
             .header-logo {
                 flex-shrink: 0;
@@ -841,6 +842,7 @@
                 .footer-sections-aligned {
                     flex-direction: column;
                     gap: 30px;
+                    align-items: center;
                 }
             }
 
@@ -871,8 +873,8 @@
                     <!-- Menú Desktop (visible en pantallas grandes) -->
                     <nav class="desktop-nav">
                       <ul class="nav-list">
-                        <li class="nav-item">
-                          <a href="/#what-makes-us-different" class="nav-link">What makes us different?</a>
+                        <li class="nav-item active">
+                          <a href="/#what-makes-us-different active" class="nav-link">What makes us different?</a>
                         </li>
                         <li class="nav-item">
                           <a href="/about-us.html" class="nav-link">About us</a>
@@ -880,7 +882,7 @@
                         <li class="nav-item">
                           <a href="/about-us.html#our-services" class="nav-link">Our cleaning services</a>
                         </li>
-                        <li class="nav-item active">
+                        <li class="nav-item">
                           <a href="/faq.html" class="nav-link">FAQ</a>
                         </li>
                       </ul>
@@ -898,8 +900,8 @@
                     <div class="mobile-menu">
                       <nav class="mobile-nav">
                         <ul class="mobile-nav-list">
-                          <li class="mobile-nav-item">
-                            <a href="/#what-makes-us-different" class="mobile-nav-link">What makes us different?</a>
+                          <li class="mobile-nav-item active">
+                            <a href="/#what-makes-us-different active" class="mobile-nav-link">What makes us different?</a>
                           </li>
                           <li class="mobile-nav-item">
                             <a href="/about-us.html" class="mobile-nav-link">About us</a>
@@ -907,7 +909,7 @@
                           <li class="mobile-nav-item">
                             <a href="/about-us.html#our-services" class="mobile-nav-link">Our cleaning services</a>
                           </li>
-                          <li class="mobile-nav-item active">
+                          <li class="mobile-nav-item">
                             <a href="/faq.html" class="mobile-nav-link">FAQ</a>
                           </li>
                         </ul>
@@ -1216,6 +1218,29 @@
                   setInterval(nextSlide, 5000);
                 });
               </script>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                  const hamburgerBtn = document.querySelector('.hamburger-btn');
+                  const mobileMenu = document.querySelector('.mobile-menu');
+                
+                  hamburgerBtn.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    mobileMenu.classList.toggle('active');
+                    this.setAttribute('aria-expanded', this.classList.contains('active'));
+                  });
+
+                  // Cerrar menú al hacer clic en un enlace
+                  const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+                  mobileLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                      hamburgerBtn.classList.remove('active');
+                      mobileMenu.classList.remove('active');
+                      hamburgerBtn.setAttribute('aria-expanded', 'false');
+                    });
+                  });
+                });
+            </script>
 
             <footer class="footer">
                 <div class="footer-container">
