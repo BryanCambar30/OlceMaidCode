@@ -377,6 +377,19 @@
                 transition: transform 0.5s ease;
             }
 
+            .service-image-dog {
+                height: 250px;
+                overflow: hidden;
+            }
+
+            .service-image-dog img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.5s ease;
+                object-position: top;
+            }
+
             .service-card:hover .service-image img {
                 transform: scale(1.05);
             }
@@ -1048,7 +1061,7 @@
                         <!-- Servicio 2 -->
                         <div class="service-card">
                           <div class="service-image">
-                            <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=709,h=504,fit=crop/YbNa1qMWQoUanQ1R/fb_img_1715390396803-mk3D9ZN3qlij4vOl.jpg" alt="Deep Cleaning" loading="lazy">
+                            <img src="public/img/Imagen de WhatsApp 2025-06-20 a las 19.26.40_4170ad9f.jpg" alt="Deep Cleaning" loading="lazy">
                           </div>
                           <div class="service-content">
                             <h3 class="service-name">Deep Cleaning</h3>
@@ -1060,8 +1073,8 @@
                         
                         <!-- Servicio 3 -->
                         <div class="service-card">
-                          <div class="service-image">
-                            <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=709,h=504,fit=crop/YbNa1qMWQoUanQ1R/fb_img_1715390219745-YX4PbKM7rjSPeK7a.jpg" alt="Carpet Cleaning" loading="lazy">
+                          <div class="service-image-dog">
+                            <img src="public/img/Imagen de WhatsApp 2025-06-20 a las 19.25.34_d7f52f35.jpg" alt="Carpet Cleaning" loading="lazy">
                           </div>
                           <div class="service-content">
                             <h3 class="service-name">Carpet Cleaning</h3>
@@ -1155,33 +1168,40 @@
                       
                       <!-- Columna Derecha - Formulario -->
                       <div class="contact-form">
-                        <form name="Contact form" class="form">
+                        <form action="https://formsubmit.co/info@olcemaid.com" method="POST" class="form">
+                          <!-- Campo oculto para el asunto -->
+                          <input type="hidden" name="_subject" value="Nuevo mensaje de contacto">
+                          
                           <!-- Campo Nombre -->
                           <div class="form-group">
                             <label for="name">Name*</label>
-                            <input id="name" type="text" placeholder="Your name" required>
+                            <input id="name" name="name" type="text" placeholder="Your name" required>
                           </div>
                           
                           <!-- Campo Email -->
                           <div class="form-group">
                             <label for="email">Your email*</label>
-                            <input id="email" type="email" placeholder="Your email address" required>
+                            <input id="email" name="email" type="email" placeholder="Your email address" required>
                           </div>
                           
                           <!-- Campo Teléfono -->
                           <div class="form-group">
                             <label for="phone">Phone Number*</label>
-                            <input id="phone" type="tel" placeholder="Your Phone Number" required>
+                            <input id="phone" name="phone" type="tel" placeholder="Your Phone Number" required>
                           </div>
                           
                           <!-- Campo Mensaje -->
                           <div class="form-group">
-                            <label for="message">Leave a message; we'd love to hear all the details*</label>
-                            <textarea id="message" placeholder="Enter your message" required></textarea>
+                            <label for="message">Leave a message*</label>
+                            <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
                           </div>
                           
                           <!-- Botón Enviar -->
                           <button type="submit" class="submit-btn">Submit</button>
+                          
+                          <!-- Configuraciones adicionales -->
+                          <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
+                          <input type="hidden" name="_captcha" value="false">
                         </form>
                       </div>
                     </div>
