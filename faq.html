@@ -37,17 +37,19 @@
           position: relative;
           padding-right: 30px;
           margin-bottom: 15px;
+          list-style: none;
         }
 
         .faq__question::after {
-            content: "▼";
+            content: "∨";
             position: absolute;
             right: 10px;
             transition: transform 0.3s ease;
+            color: #1073b3
         }
 
         .faq__item[open]  .faq__question::after {
-          content: "▲";
+          content: "❯";
         }
 
         .faq__answer {
@@ -590,7 +592,24 @@
                 </div>
             </section>
 
-
+            <script>
+              document.addEventListener('DOMContentLoaded', function() {
+                const faqItems = document.querySelectorAll('.faq__item');
+                
+                faqItems.forEach(item => {
+                  const question = item.querySelector('.faq__question');
+                  
+                  question.addEventListener('click', function() {
+                    // Cerrar todas las demás FAQ
+                    faqItems.forEach(otherItem => {
+                      if (otherItem !== item && otherItem.open) {
+                        otherItem.removeAttribute('open');
+                      }
+                    });
+                  });
+                });
+              });
+              </script>
 
             <script>
               document.addEventListener('DOMContentLoaded', function() {
