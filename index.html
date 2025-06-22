@@ -99,7 +99,8 @@
         
             .cta-button:hover {
               background-color: white;
-              color: #0d141a;
+              color: #43a6db;
+              border: 2px solid #43a6db;
             }
         
             /* Responsive */
@@ -120,7 +121,7 @@
 
             .feature-section {
                 background-color: #fff;
-                padding: 80px 16px;
+                padding: 20px 16px;
                 font-family: 'Inter', sans-serif;
             }
 
@@ -211,7 +212,7 @@
             
             .testimonial-carousel-section {
                 background-color: #ffffff;
-                padding: 60px 16px;
+                padding: 1px 16px;
             }
 
             .carousel-container {
@@ -321,7 +322,7 @@
 
             .services-section {
                 background-color: #ffffff;
-                padding: 80px 16px;
+                padding: 0px 16px;
                 font-family: 'Inter', sans-serif;
             }
 
@@ -409,6 +410,35 @@
                 color: #333;
                 line-height: 1.6;
                 margin-bottom: 0;
+            }
+
+            .cta-section {
+              display: grid;
+              justify-items: center;
+            }
+
+            .cta-buttons {
+              display: flex;
+              justify-content: center;
+            }
+
+            @media screen and (max-width: 768px) {
+              .services-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 2px;
+                margin-bottom: 20px;
+            }
+
+                .service-card {
+                    margin-bottom: 30px;
+                }
+
+                .service-image img {
+                    object-fit: cover;
+                    object-position: center;
+                }
+              
             }
 
   /* Sección CTA */
@@ -514,7 +544,9 @@
   }
   
   .submit-btn:hover {
-    background-color: #3a92c0;
+    background-color: white;
+    color: #43a6db;
+    border: 2px solid #43a6db;
   }
   
   /* Responsive - Tablet */
@@ -554,9 +586,10 @@
     }
     
     .contact-form {
-      padding: 0;
+      /*padding: 0;
       display: grid;
-      justify-content: center;
+      justify-content: center;*/
+      max-height: fit-content;
     }
     
     .submit-btn {
@@ -632,23 +665,6 @@
 
             .nav-link:hover,
             .nav-item.active .nav-link {
-              color: rgb(13, 20, 26);
-            }
-
-            .cta-button {
-              background-color: rgb(67, 166, 219);
-              color: white;
-              padding: 10px 25px;
-              border-radius: 50px;
-              text-decoration: none;
-              font-weight: 400;
-              transition: all 0.3s ease;
-              border: none;
-              cursor: pointer;
-            }
-
-            .cta-button:hover {
-              background-color: rgb(229, 229, 229);
               color: rgb(13, 20, 26);
             }
 
@@ -886,7 +902,7 @@
     </head>
 	<body>
 		<main>
-			<div>
+			<div class="header-container">
                 <header class="main-header">
                     <!-- Logo -->
                     <div class="header-logo">
@@ -1061,7 +1077,7 @@
                         <!-- Servicio 2 -->
                         <div class="service-card">
                           <div class="service-image">
-                            <img src="public/img/Imagen de WhatsApp 2025-06-20 a las 19.26.40_4170ad9f.jpg" alt="Deep Cleaning" loading="lazy">
+                            <img src="public/img/Imagen de WhatsApp 2025-06-21 a las 19.29.59_dd6acd21.jpg" alt="Deep Cleaning" loading="lazy">
                           </div>
                           <div class="service-content">
                             <h3 class="service-name">Deep Cleaning</h3>

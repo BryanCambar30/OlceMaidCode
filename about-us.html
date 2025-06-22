@@ -93,8 +93,9 @@
             }
 
             .cta-button:hover {
-              background-color: rgb(229, 229, 229);
-              color: rgb(13, 20, 26);
+              background-color: white;
+              color: #43a6db;
+              border: 2px solid #43a6db;
             }
 
             /* Estilos para el menú hamburguesa */
@@ -331,63 +332,63 @@
     </head>
 <body>
     <main class="page">
-		<div class="header-container">
-            <header class="main-header">
-              <!-- Logo -->
-              <div class="header-logo">
-                <a href="/">
-                  <img src="public/img/Olce_Maid_logo_horizontal[1].png" alt="OlceMaid logo" class="logo-image">
-                </a>
-              </div>
+		  <div class="header-container">
+        <header class="main-header">
+          <!-- Logo -->
+            <div class="header-logo">
+              <a href="/">
+                <img src="public/img/Olce_Maid_logo_horizontal[1].png" alt="OlceMaid logo" class="logo-image">
+              </a>
+            </div>
           
-              <!-- Menú Desktop (visible en pantallas grandes) -->
-              <nav class="desktop-nav">
-                <ul class="nav-list">
-                  <li class="nav-item">
-                    <a href="/#what-makes-us-different" class="nav-link">What makes us different?</a>
-                  </li>
-                  <li class="nav-item active">
-                    <a href="/about-us.html" class="nav-link">About us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="/about-us.html#our-services" class="nav-link">Our cleaning services</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="/faq.html" class="nav-link">FAQ</a>
-                  </li>
-                </ul>
-                <a href="/contact-us.html" class="cta-button">BOOK NOW</a>
-              </nav>
+            <!-- Menú Desktop (visible en pantallas grandes) -->
+            <nav class="desktop-nav">
+              <ul class="nav-list">
+                <li class="nav-item">
+                  <a href="/#what-makes-us-different" class="nav-link">What makes us different?</a>
+                </li>
+                <li class="nav-item active">
+                  <a href="/about-us.html" class="nav-link">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/about-us.html#our-services" class="nav-link">Our cleaning services</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/faq.html" class="nav-link">FAQ</a>
+                </li>
+              </ul>
+              <a href="/contact-us.html" class="cta-button">BOOK NOW</a>
+            </nav>
           
               <!-- Menú Hamburguesa (solo móvil) -->
-              <button class="hamburger-btn" aria-label="Menu" aria-expanded="false">
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-              </button>
-          
-              <!-- Menú Móvil (aparece al hacer clic en hamburguesa) -->
-              <div class="mobile-menu">
-                <nav class="mobile-nav">
-                  <ul class="mobile-nav-list">
-                    <li class="mobile-nav-item">
-                      <a href="/#what-makes-us-different" class="mobile-nav-link">What makes us different?</a>
-                    </li>
-                    <li class="mobile-nav-item active">
-                      <a href="/about-us.html" class="mobile-nav-link">About us</a>
-                    </li>
-                    <li class="mobile-nav-item">
-                      <a href="/about-us.html#our-services" class="mobile-nav-link">Our cleaning services</a>
-                    </li>
-                    <li class="mobile-nav-item">
-                      <a href="/faq.html" class="mobile-nav-link">FAQ</a>
-                    </li>
-                  </ul>
-                  <a href="/contact-us.html" class="mobile-cta-button">BOOK NOW</a>
-                </nav>
-              </div>
-            </header>
-        </div>
+            <button class="hamburger-btn" aria-label="Menu" aria-expanded="false">
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line"></span>
+            </button>
+        
+            <!-- Menú Móvil (aparece al hacer clic en hamburguesa) -->
+            <div class="mobile-menu">
+              <nav class="mobile-nav">
+                <ul class="mobile-nav-list">
+                  <li class="mobile-nav-item">
+                    <a href="/#what-makes-us-different" class="mobile-nav-link">What makes us different?</a>
+                  </li>
+                  <li class="mobile-nav-item active">
+                    <a href="/about-us.html" class="mobile-nav-link">About us</a>
+                  </li>
+                  <li class="mobile-nav-item">
+                    <a href="/about-us.html#our-services" class="mobile-nav-link">Our cleaning services</a>
+                  </li>
+                  <li class="mobile-nav-item">
+                    <a href="/faq.html" class="mobile-nav-link">FAQ</a>
+                  </li>
+                </ul>
+                <a href="/contact-us.html" class="mobile-cta-button">BOOK NOW</a>
+              </nav>
+            </div>
+        </header>
+      </div>
         <section class="about-section">
             <div class="about-container">
               <!-- Primera fila: Texto (izq) + Imagen grande (der) -->
@@ -559,7 +560,7 @@
               <div class="service service-1">
                 <div class="service-image">
                   <img 
-                  src="public/img/FB_IMG_1715390508316.jpg"  
+                  src="public/img/oficina-de-limpieza-de-persona-de-servicio-de-limpieza-profesional.jpg"  
                     alt="General Cleaning Service" 
                     loading="lazy"
                     class="service-img"
@@ -899,7 +900,9 @@
   .service-img {
     width: 100%;
     height: auto;
+    max-height: 450px;
     display: block;
+    object-fit: cover;
     transition: transform 0.3s ease;
   }
   
@@ -931,12 +934,13 @@
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
+    justify-content: center;
   }
   
   .btn {
     display: inline-block;
     padding: 12px 24px;
-    border-radius: 4px;
+    border-radius: 50px;
     font-weight: 600;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -949,7 +953,9 @@
   }
   
   .btn-primary:hover {
-    background-color: #3a92c0;
+    background-color: white;
+    color: #43a6db;
+    border: 2px solid #43a6db;
   }
   
   .btn-secondary {
@@ -994,6 +1000,15 @@
       flex: 1 1 100%;
       min-width: 100%;
     }
+
+    .service-img {
+      width: 100%;
+      height: auto;
+      max-height: 400px;
+      display: block;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
     
     .service-title {
       font-size: 1.5rem;
@@ -1006,7 +1021,8 @@
     
     .service-buttons {
       justify-content: center;
-      width: fit-content;
+      width: 100%;
+      flex-wrap: nowrap;
     }
   }
   
@@ -1026,7 +1042,7 @@
     }
     
     .service-buttons {
-      flex-direction: column;
+      /*flex-direction: column;*/
       gap: 10px;
     }
     
