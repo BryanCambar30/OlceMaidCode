@@ -41,15 +41,17 @@
         }
 
         .faq__question::after {
-            content: "˅";
+            content: "❯";
             position: absolute;
             right: 10px;
             transition: transform 0.3s ease;
-            color: #1073b3
+            color: #1073b3;
+            transform: rotate(90deg);
         }
 
         .faq__item[open]  .faq__question::after {
           content: "❯";
+          transform: rotate(0deg);
         }
 
         .faq__answer {
